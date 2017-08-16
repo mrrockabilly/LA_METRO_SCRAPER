@@ -35,17 +35,6 @@ const scrapeController = {
 
 
   },
-
-	//Sample Code.
-  getData: (req, res, next) => {
-
-    // change URL to any site that you want
-    request('http://www.producthunt.com/', (error, response, html) => {
-      let $ = cheerio.load(html);
-      // add code here
-
-    });
-  },
   //Root Route logic. Scrapes LA metro news.
   getAll: (req, res, next) =>{
 

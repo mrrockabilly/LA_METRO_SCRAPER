@@ -15,9 +15,6 @@ app.use(function(req, res, next) {
 // app.get('/', scraperController.getAll);
 app.get('/', scraperController.cachify);
 
-// first sample route
-app.get('/sample', scraperController.getData);
-
 app.listen(3000);
 
 module.exports = app;
